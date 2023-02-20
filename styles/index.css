@@ -1,7 +1,11 @@
+/*FONT*/
+
 @font-face{
     font-family: myFont;
     src: url("../fonts/Helvetica\ Neue\ Condensed\ Bold.ttf")
 }
+
+/*MAIN CONTAINER FOR THE WHOLE WEBPAGE*/
 
 body{
     margin: 0;
@@ -17,17 +21,16 @@ main{
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    
-
 }
+
+/*MAIN CONTAINER FOR GRID-ELEMENTS*/
+
 .grid__container{
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     width: 100%;
     height: 70%;
     margin: 0;
     display: grid;
-    /* grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(auto-fill, 1fr); */
     grid-template-areas: 
         "first first third third fourth fourth"
         "first first third third fourth fourth"
@@ -44,86 +47,69 @@ main{
     padding: 24px;
 }
 
+/*GRID CHILDREN*/
+
 .first{
-    /* grid-row: 1 / 3;
-    grid-column: 1 / 2; */
     background-color: #007F5F;
     grid-area: first;
 }
 
 .second{
-    /* grid-row: 3 / 6;
-    grid-column: 1 / 2; */
     background-color: #2B9348; 
     grid-area: second;
 }
 
 .third{
-    /* grid-row: 1 / 6;
-    grid-column: 2 / 4; */
     background-color: #80B918;
     grid-area: third;
 
 }
 
 .fourth{
-    /* grid-row: 1 / 2;
-    grid-column: 5 / 6; */
     background-color: #DDDF00;
     grid-area: fourth;
 
 }
 
 .fifth{
-    /* grid-row: 2 / 4;
-    grid-column: 5 / 6; */
     background-color: #EEEF20;
     grid-area: fifth;
 
 }
 
 .sixth{
-    /* grid-row: 4 / 6;
-    grid-column: 5 / 6; */
     background-color: #FFFF3F;
     grid-area: sixth;
 
 }
 
 .seventh{
-    /* grid-row: 6 / 10;
-    grid-column: 1 / 2; */
     background-color: #55A630;
     grid-area: seventh;
 }
 
 .eighth{
-    /* grid-row: 6 / 9;
-    grid-column: 3 / 3; */
     background-color: #AACC00;  
     grid-area: eighth;
 }
 
 .ninth{
-    /* grid-row: 9 / 10;
-    grid-column: 3 / 3; */
     background-color: #BFD200;  
     grid-area: ninth;
 }
 
 .tenth{
-    /* grid-row: 6 / 10;
-    grid-column: 4 / 5; */
     background-color: #D4D700; 
     grid-area: tenth;
 }
 
 .eleventh{
-    /* grid-row: 6 / 10;
-    grid-column: 6 / 6; */
     background-color: #007F5F;  
     grid-area: eleventh;   
 }
+
+
+/*FOOTER*/
 
 .twelfth{
     width: inherit;
@@ -131,7 +117,7 @@ main{
     padding-right: 24px;
     grid-area: twelfth;
     background-color: #9BC1BC;
-    border: 2px pink solid;
+    /*border: 2px pink solid;*/
     height: 20%;
     font-weight: bold;
     text-transform: uppercase;
